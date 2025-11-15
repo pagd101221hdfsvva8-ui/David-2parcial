@@ -1,29 +1,42 @@
 #include<stdio.h>
 #include<math.h>
+
+/*
+   Para resolver la ecuación cuadrática ax^2 + bx + c = 0 se usa la fórmula general:
+       x = (-b ± √(b² - 4ac)) / (2a)
+
+   - Se calcula primero el discriminante: D = b² - 4ac.
+   - Si D > 0 → hay dos soluciones reales distintas.
+   - Si D = 0 → hay una solución real doble.
+   - Si D < 0 → las soluciones son complejas, usando:
+       parte real = -b / (2a)
+       parte imaginaria = √(-D) / (2a)
+*/
+
 main(){
 
-float a;
-float b;
-float c;
-float discriminante;
-float x1;
-float x2;
-float partereal;
-float parteimaginaria;
+    float a;
+    float b;
+    float c;
+    float discriminante;
+    float x1;
+    float x2;
+    float partereal;
+    float parteimaginaria;
 
-printf("\t\t Formula general para una ecuacion de segundo grado\n");
-printf("\t\tax^2 + bx + c = 0\n\n");
+    printf("\t\t Formula general para una ecuacion de segundo grado\n");
+    printf("\t\tax^2 + bx + c = 0\n\n");
 
-printf("Introduce el valor de a \n");
-scanf("%f", &a);
+    printf("Introduce el valor de a \n");
+    scanf("%f", &a);
 
-printf("Introduce el valor de b \n");
-scanf("%f", &b);
+    printf("Introduce el valor de b \n");
+    scanf("%f", &b);
 
-printf("Ingresa el valor de c \n");
-scanf("%f", &c);
+    printf("Ingresa el valor de c \n");
+    scanf("%f", &c);
 
-if (a == 0) {
+    if (a == 0) {
         printf("\nNo es una ecuacion cuadratica (a no puede ser 0).\n");
     } else {
         discriminante = (b * b) - (4 * a * c);
