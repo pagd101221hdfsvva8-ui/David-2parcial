@@ -1,6 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
+
+// Este programa muestra un menú con los números del 1 al 12 y, según la opción ingresada,
+// muestra el nombre del mes correspondiente utilizando una estructura switch.
+
 main(){
-int mes;
+    int opcionMes;
 
     printf("\t\t Menu de opciones \n\n");
     printf("\t 1 \n");
@@ -16,9 +20,9 @@ int mes;
     printf("\t 11 \n");
     printf("\t 12 \n");
     printf("Ingresa tu opcion preferdia \n");
-    scanf("%d", &mes);
+    scanf("%d", &opcionMes);
 
-    switch(mes)
+    switch(opcionMes)
     {
     case 1:
         printf("Estamos en Enero");
